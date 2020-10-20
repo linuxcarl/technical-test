@@ -1,0 +1,24 @@
+{
+  "name": "terapify",
+  "version": "1.0.0",
+  "description": "technical test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linuxcarl/technical-test.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "NodeJs",
+    "Terapify"
+  ],
+  "author": "Carlos Enrique Ramírez Flores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linuxcarl/technical-test/issues"
+  },
+  "homepage": "https://github.com/linuxcarl/technical-test#readme"
+}
