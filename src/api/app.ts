@@ -1,5 +1,8 @@
-import { Server } from './server';
+import { Server } from './server'
+import booking from './booking/booking.router'
 
-const app = new Server().getApp();
+const app = new Server().getApp()
 
-export { app };
+app.use('/booking', booking)
+
+export { app }

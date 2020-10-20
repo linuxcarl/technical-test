@@ -1,4 +1,4 @@
 export interface IApi {
-  port: number;
-  cors: string;
+  port: number
+  cors: string
 }
