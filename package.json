@@ -4,7 +4,11 @@
   "description": "technical test",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/api/app.ts",
+    "start": "npm run tsc && node ./dist/api/app.js",
+    "lint": "eslint '*/**/*.ts' --quiet --fix",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -46,5 +50,16 @@
     "ts-jest": "^26.4.1",
     "ts-node-dev": "^1.0.0",
     "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   }
 }
