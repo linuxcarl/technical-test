@@ -1,6 +1,6 @@
 import { FilterDto } from '../filter.dto'
 
-export interface bookingFilterDto extends FilterDto {
+export interface BookingFilterDto extends FilterDto {
   psy?: string
   pattient?: string
 }

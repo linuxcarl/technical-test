@@ -4,14 +4,13 @@ const { Schema } = mongoose
 
 const bookingSchema = new Schema(
   {
-    _id: String,
     start_time: Date,
     end_time: Date,
     duration: String,
     psy: String,
     pattient: String,
-    createdAt: Date,
-    updatedAt: Date,
+    created_at: Date,
+    updated_at: Date,
   },
   { typeKey: '$type' }
 )

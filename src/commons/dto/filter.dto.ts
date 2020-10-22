@@ -1,10 +1,10 @@
-import { TrueFalseTypes } from '../types/true-false.types'
 import { OrderTypes } from '../types/order.types'
+import { TrueFalseTypes } from '../types/true-false.types'
 
 export interface FilterDto {
-  limit?: number
-  offset?: number
+  limit?: number | undefined
+  offset?: number | undefined
   order?: OrderTypes
-  page?: number
+  page?: number | undefined
   all?: TrueFalseTypes
 }
